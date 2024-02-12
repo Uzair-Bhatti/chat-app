@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="w-full h-screen">
+      <div class="flex justify-center items-center h-screen Container">
+        <h1>Welcome To The Chat</h1>
+
+        <input
+          type="text"
+          placeholder="Enter your email"
+          class="input input-bordered input-accent w-full max-w-xs"
+          id="email"
+        />
+        <input
+          type="text"
+          placeholder="Enter your password"
+          class="input input-bordered input-accent w-full max-w-xs"
+          id="password"
+        />
+        <!-- <button id="loginBtn" class="btn btn-wide">Loggin With Google</button> -->
+        <button id="signinBtn" class="btn button btn-xs sm:btn-sm md:btn-md lg:btn-lg left">
+          Sign in
+        </button>
+        <button id="loginBtn" class="btn button btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+          Sign in With Google
+        </button>
+        <p>Don't have a account?<a href="./signup.html">Signup</a> now</p>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

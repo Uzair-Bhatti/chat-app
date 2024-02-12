@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="w-full h-screen">
+      <div class="flex justify-center items-center h-screen Container">
+        <h1>Sign up In Chat Chocolate!</h1>
+        <input
+          type="text"
+          placeholder="Enter your First Name"
+          class="input input-bordered input-accent w-full max-w-xs"
+        />
+        <input
+          type="text"
+          placeholder="Enter your Last Name"
+          class="input input-bordered input-accent w-full max-w-xs"
+        />
+        <input
+          type="text"
+          placeholder="Enter your Email"
+          class="input input-bordered input-accent w-full max-w-xs"
+        />
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          required=""
+          class="input input-bordered input-accent w-full max-w-xs"
+        />
+        <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+        <input
+          type="password"
+          placeholder="Confirm your Password"
+          required=""
+          class="input input-bordered input-accent w-full max-w-xs"
+        />
+        <span id="showPass" class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+        <button id="signupBtn" class="btn button btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+          Sign up
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
