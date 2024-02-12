@@ -45,7 +45,6 @@ const storage = getStorage(app);
 const provider = new GoogleAuthProvider();
 
 const loginBtn = document.getElementById("loginBtn");
-const signinBtn = document.getElementById("signinBtn");
 const sendMessageBtn = document.getElementById("sendMessageBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 const signupBtn = document.getElementById("signupBtn");
@@ -63,6 +62,7 @@ const preview = document.getElementById("preview");
 const imageController = document.getElementById("imageController");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const signinBtn = document.getElementById("signinBtn");
 
 const currentPageName = window.location.pathname.split("/").pop();
 console.log(currentPageName);
@@ -128,15 +128,12 @@ const onLoad = () => {
         window.location.href = "index.html";
       }
     } else {
-      if (currentPageName !== "index.html" && currentPageName !== "") {
-          window.location.href = "/";
+      if (currentPageName !== "login.html") {
+        window.location.href = "login.html";
       }
-
-      console.log("User Is not Logged In!");
-  }
+    }
   });
 };
-onLoad();
 onLoad();
 
 // signin with google starts //
